@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#background{
+    height: 100vh;
+    background: url(./background.png) repeat;
+    /* filter: contrast(0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#block{
+    display: flex;
+    flex-direction: column;
+}
+
+#number_box{
+    /* height: 25rem; */
+    /* width: 25rem; */
+    height: 50rem;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #a52a2a; */
+    /* background-color: #0a8f0a; */
+    background-color: #202020;
+    /* border: 1rem solid #000; */
+    border: 4rem solid #000;
+}
+
+#number{
+    color: #ffffff;
+    /* font-size: 13rem; */
+    font-size: 30rem;
+}
+
+#spin{
+    height: 5rem;
+}
