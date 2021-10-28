@@ -1,10 +1,10 @@
 var roll = new Audio('roulette_spin.wav');
 const b_color=document.querySelector('#number_box');
-// let document.getElementById('number_background');
 document.getElementById('spin').addEventListener("click", spin);
 
 function spin() {
-    console.log('spin');
+    roll.pause();
+    roll.currentTime = 0;
     roll.play()
     for (i=0; i<141; i++){
         // Runs 25 times, with step from 0 to 140
@@ -12,7 +12,6 @@ function spin() {
         (function(i){
             window.setTimeout(function(){
                 rand=Math.floor(Math.random()*38)
-                // rand=Math.floor(Math.random()*3)
                 document.getElementById('number').innerHTML=rand
                 if (rand%2==0) {
                     b_color.style.backgroundColor='#202020';
