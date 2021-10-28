@@ -1,4 +1,4 @@
-var roll = new Audio('roulette_spin.wav');
+var roll = new Audio('roulette_spin.mp3');
 const b_color=document.querySelector('#number_box');
 const btn=document.getElementById('spin')
 
